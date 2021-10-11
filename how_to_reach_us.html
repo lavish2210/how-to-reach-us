@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIT Mandi | How to Reach Us</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        :root {
+        --primary_colour: #2980B9;;
+        }
+        .navbar {
+            height: 70px;
+            border: 2px solid black;
+        }
+        .content{
+            display: flex;
+            width: 80vw;
+            margin: 20px auto;
+            flex-direction: column;
+        }
+        .pageTitle{
+            font-size: 40px;
+            padding: 8px 15px;
+            background-color: var(--primary_colour);
+            color: #fff;
+            border-bottom: 0;
+            border-radius: 4px;
+            text-transform: capitalize;
+        }
+        .mapcontent{
+            display: flex;
+            margin-top: 10px;
+            background-color: #f5f8fa;
+            border-radius: 5px;
+        }
+        .map{
+            min-width: 70%;
+        }
+        .mapstyle{
+            border: none;
+            height: 450px;
+            width: 100%;
+        }
+        .maptext{
+            display: flex;
+            margin: 5px 5px 10px 10px;
+            align-items: center;
+            font-family: sans-serif;
+        }
+        /* for mapcontent */
+        @media only screen and (max-width: 760px){
+            .mapcontent{
+                flex-direction: column;
+            }
+            .map{
+                width: 100%;
+            }
+        }
+        .route{
+            display: flex;
+            width: 80vw;
+            margin: 20px auto;
+            flex-direction: row;
+        }
+        .routecontent{
+            display: flex;
+            align-items: center;
+            padding: auto 0px;
+            flex-direction: column;
+        }
+        .heading{
+            font-size: 30px;
+            margin-bottom: 5px;
+        }
+        .label{
+            cursor: pointer;
+            display: block;
+            border: 0;
+            width: 100%;
+            background-color: transparent;
+            text-align: left;
+            padding: 0.25rem 0.25rem;
+            font-size: 15px;
+        }
+        .label-text{
+            display: inline;
+            margin-top: 1px;
+        }
+        .toggle{
+            display: inline;
+        }
+        .hidden{
+            max-height: 0;
+            overflow:hidden;
+            transition: max-height 0.5s, overflow 0s;
+        }
+        .visible{
+            max-height: 5em;
+            overflow:auto;
+            transition: max-height 0.5s, overflow 0.5s 0.5s;
+            font-size: 20px;
+            border: 1px solid gray;
+            background-color: #def;
+            border-radius: 5px;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        .image{
+            width: 50%;
+            margin: 0px 50px ;
+        }
+        @media only screen and (max-width: 760px){
+            .image{
+                width: 100%;
+                margin: 0px;
+            }
+            .route{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Will be edited -->
+    <div class="navbar">
+        Navbar
+    </div>
+    <!-- ----------- -->
+    <div class="content">
+        <div class="title pageTitle"><i class="fa fa-crosshairs"></i> &nbsp;How to reach IIT Mandi</div>
+        <div class="mapcontent">
+            <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3391.819824640184!2d76.98388601511203!3d31.775399781286072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3904e36054b1fd81%3A0xc3174a90dec9f339!2sIndian%20Institute%20of%20Technology%2C%20Mandi!5e0!3m2!1sen!2sin!4v1633936139139!5m2!1sen!2sin" class="mapstyle" allowfullscreen="" loading="lazy"></iframe></div>
+            <div class="maptext">
+                Mandi is a small town at the center of Himachal Pradesh, on the way to the popular resorts of Kullu and Manali. The main campus of IIT Mandi is situated in Kamand vilage, which is 14 kilometers away from Mandi town.
+                <br>
+                // to be edited by content team
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+    <div class="route">
+        <img src="./1.jpeg" alt="" class="image">
+        <div class="routeinfo">
+            <div class="heading">
+                To reach IIT Mandi's main campus from Mandi town:
+            </div>
+            <div class="routecontent">
+                <button class="label" onclick="">
+                    <img src="https://cdn2.hubspot.net/hubfs/53/assets/hubspot.com/style-guide/modules/forms/rightArrow.svg" alt="" class="toggle">
+                    <h3 class="label-text">
+                        By IIT Bus
+                    </h3>
+                    <div class="label-content hidden">
+                        IT Mandi's shuttle buses ply regularly between Mandi and Kamand. The bus route starts at IIT Mandi North/South campuses and ends at Mandav Block, bus stand, Mandi – the transit campus of IIT Mandi.
+                    <div>
+                </button>
+                <button class="label">
+                    <img src="https://cdn2.hubspot.net/hubfs/53/assets/hubspot.com/style-guide/modules/forms/rightArrow.svg" alt="" class="toggle">
+                    <h3 class="label-text">
+                        By Taxi
+                    </h3>
+                    <div class="label-content hidden">
+                        Taxis are stationed outside Mandi main bus stand 24 x 7. The cost of a one-way trip to the IIT campus is about Rs. 600/-
+                    <div>
+                </button>
+                <button class="label">
+                    <img src="https://cdn2.hubspot.net/hubfs/53/assets/hubspot.com/style-guide/modules/forms/rightArrow.svg" alt="" class="toggle">
+                    <h3 class="label-text">
+                        By HRTC Bus
+                    </h3>
+                    <div class="label-content  hidden">
+                        Himachal Road Transport Corporation/Local buses also ply between Mandi and Kamand. Please note that these buses sometimes can be crowded.
+                    <div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="classify">
+        
+    </div>
+    <div class="route">
+        <img src="./1.jpeg" alt="" class="image">
+        <div class="routeinfo">
+            <div class="heading">
+                From Delhi
+            </div>
+            <div class="routecontent">
+                <button class="label" onclick="">
+                    <img src="https://cdn2.hubspot.net/hubfs/53/assets/hubspot.com/style-guide/modules/forms/rightArrow.svg" alt="" class="toggle">
+                    <h3 class="label-text">
+                        By IIT Bus
+                    </h3>
+                    <div class="label-content hidden">
+                        IT Mandi's shuttle buses ply regularly between Mandi and Kamand. The bus route starts at IIT Mandi North/South campuses and ends at Mandav Block, bus stand, Mandi – the transit campus of IIT Mandi.
+                    <div>
+                </button>
+                <button class="label">
+                    <img src="https://cdn2.hubspot.net/hubfs/53/assets/hubspot.com/style-guide/modules/forms/rightArrow.svg" alt="" class="toggle">
+                    <h3 class="label-text">
+                        By Taxi
+                    </h3>
+                    <div class="label-content hidden">
+                        Taxis are stationed outside Mandi main bus stand 24 x 7. The cost of a one-way trip to the IIT campus is about Rs. 600/-
+                    <div>
+                </button>
+                <button class="label">
+                    <img src="https://cdn2.hubspot.net/hubfs/53/assets/hubspot.com/style-guide/modules/forms/rightArrow.svg" alt="" class="toggle">
+                    <h3 class="label-text">
+                        By HRTC Bus
+                    </h3>
+                    <div class="label-content  hidden">
+                        Himachal Road Transport Corporation/Local buses also ply between Mandi and Kamand. Please note that these buses sometimes can be crowded.
+                    <div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
