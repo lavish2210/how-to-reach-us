@@ -12,7 +12,7 @@
             padding: 0px;
         }
         :root {
-        --primary_colour: #2980B9;;
+        --primary_colour: #2980B9;
         }
         .navbar {
             height: 70px;
@@ -41,6 +41,7 @@
         }
         .map{
             min-width: 70%;
+            min-height: 50vh;
         }
         .mapstyle{
             border: none;
@@ -62,11 +63,16 @@
                 width: 100%;
             }
         }
+        .routeinfo{
+            margin: 10px 20px;
+        }
         .route{
             display: flex;
             width: 80vw;
             margin: 20px auto;
             flex-direction: row;
+            background-color: #f5f8fa;
+            border-radius: 5px;
         }
         .routecontent{
             display: flex;
@@ -101,19 +107,18 @@
             transition: max-height 0.5s, overflow 0s;
         }
         .visible{
-            max-height: 5em;
+            max-height: 20em;
             overflow:auto;
             transition: max-height 0.5s, overflow 0.5s 0.5s;
-            font-size: 20px;
             border: 1px solid gray;
             background-color: #def;
             border-radius: 5px;
             padding: 5px;
             margin-top: 5px;
+            font-size: 20px;
         }
         .image{
             width: 50%;
-            margin: 0px 50px ;
         }
         @media only screen and (max-width: 760px){
             .image{
@@ -123,9 +128,18 @@
             .route{
                 flex-direction: column;
             }
-            .classify{
-                
-            }
+        }
+        .classify{
+            width: 80vw;
+            background-color:var(--primary_colour);
+            font-size: 30px;
+            color: #fff;
+            margin: auto;
+            padding: 4px 8px;
+            border-radius: 5px;
+        }
+        .map2{
+            min-width: 50%;
         }
     </style>
 </head>
@@ -187,10 +201,9 @@
         </div>
     </div>
     <div class="classify">
-        By
+        By Roadways: The usual travel route to Mandi is via Delhi or Chandigarh.
     </div>
     <div class="route">
-        <img src="./1.jpeg" alt="" class="image">
         <div class="routeinfo">
             <div class="heading">
                 From Delhi
@@ -199,34 +212,59 @@
                 <button class="label" onclick="">
                     <img src="https://cdn2.hubspot.net/hubfs/53/assets/hubspot.com/style-guide/modules/forms/rightArrow.svg" alt="" class="toggle">
                     <h3 class="label-text">
-                        By IIT Bus
+                        By bus/taxi
                     </h3>
                     <div class="label-content hidden">
-                        IT Mandi's shuttle buses ply regularly between Mandi and Kamand. The bus route starts at IIT Mandi North/South campuses and ends at Mandav Block, bus stand, Mandi – the transit campus of IIT Mandi.
+                        From ISBT (Interstate bus terminus) platforms 6-8, Kashmere gate, Delhi, one can catch buses towards Manali or Mandi. You can opt for different types of buses ranging from ordinary, to deluxe to AC. For more details, please visit hrtc.gov.in (Himachal Road Transport Corporation website). Other state buses and private buses are also available. The road distance between Delhi and Mandi is ~475 km. and it usually takes approximately 12 hrs (depending on traffic and other conditions) by bus. Traveling by taxi or personal vehicle, reduces the journey time by nearly an hour.
                     <div>
                 </button>
                 <button class="label">
                     <img src="https://cdn2.hubspot.net/hubfs/53/assets/hubspot.com/style-guide/modules/forms/rightArrow.svg" alt="" class="toggle">
                     <h3 class="label-text">
-                        By Taxi
+                        By train
                     </h3>
                     <div class="label-content hidden">
-                        Taxis are stationed outside Mandi main bus stand 24 x 7. The cost of a one-way trip to the IIT campus is about Rs. 600/-
-                    <div>
-                </button>
-                <button class="label">
-                    <img src="https://cdn2.hubspot.net/hubfs/53/assets/hubspot.com/style-guide/modules/forms/rightArrow.svg" alt="" class="toggle">
-                    <h3 class="label-text">
-                        By HRTC Bus
-                    </h3>
-                    <div class="label-content  hidden">
-                        Himachal Road Transport Corporation/Local buses also ply between Mandi and Kamand. Please note that these buses sometimes can be crowded.
+                        The alternative to reach Mandi from Delhi is to travel by train up to Kiratpur Sahib by Delhi-Una Himachal express (Train number 14553). It takes approximately 3.5 hrs to reach Mandi from Kiratpur by road. The Kiratpur Sahib railway station is very small and a bit far from the bus stand. All the buses coming from Delhi and Chandigarh towards Mandi, pass through Kiratpur Sahib. There are well connected trains to Chandigarh from all parts of India.
                     <div>
                 </button>
             </div>
         </div>
+        <div class="map2"><iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1765660.2679089033!2d76.0197804092354!3d30.192697273171795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x390d047309fff32f%3A0xfc5606ed1b5d46c3!2sDelhi!3m2!1d28.6862738!2d77.2217831!4m5!1s0x3904e36054b1fd81%3A0xc3174a90dec9f339!2sIndian%20Institute%20of%20Technology%2C%20Mandi%2C%20Parashar%20Road%2C%20Tehsil%20Sadar%2C%20Near%20Kataula%2C%20Kamand%2C%20Himachal%20Pradesh%20175005!3m2!1d31.7753998!2d76.9860747!5e0!3m2!1sen!2sin!4v1633956423229!5m2!1sen!2sin" style="border:0;" class="mapstyle" allowfullscreen="" loading="lazy"></iframe></div>
     </div>
-
+    <br>
+    <div class="route">
+        <div class="routeinfo">
+            <div class="heading">
+                From Chandigarh
+            </div>
+            <div class="routecontent">
+                <button class="label" onclick="">
+                    <img src="https://cdn2.hubspot.net/hubfs/53/assets/hubspot.com/style-guide/modules/forms/rightArrow.svg" alt="" class="toggle">
+                    <h3 class="label-text">
+                        By bus/taxi
+                    </h3>
+                    <div class="label-content hidden">
+                        From Chandigarh the buses to Mandi are available at Sector 43 bus stand. The other choice from Chandigarh to Mandi is to travel by taxi. The distance between Chandigarh and Mandi is ~200 kms. This distance can be covered in approximately 6 hrs by bus. By taxi, it usually takes around 5 hrs.
+                    <div>
+                </button>
+            </div>
+        </div>
+        <div class="map2"><iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d873150.9814821007!2d76.19899324920415!3d31.255453478986446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x390fed0be66ec96b%3A0xa5ff67f9527319fe!2sChandigarh!3m2!1d30.7333148!2d76.7794179!4m5!1s0x3904e36054b1fd81%3A0xc3174a90dec9f339!2sIndian%20Institute%20of%20Technology%2C%20Mandi%2C%20Parashar%20Road%2C%20Tehsil%20Sadar%2C%20Near%20Kataula%2C%20Kamand%2C%20Himachal%20Pradesh%20175005!3m2!1d31.7753998!2d76.9860747!5e0!3m2!1sen!2sin!4v1633957017568!5m2!1sen!2sin" style="border:0;" class="mapstyle" allowfullscreen="" loading="lazy"></iframe></div>
+    </div>
+    <div class="classify">
+        By Airways:
+    </div>
+    <div class="route">
+        <div class="routeinfo">
+            <div class="heading">
+                From Chandigarh
+            </div>
+            <div class="routecontent" style="font-size: 20px;">
+                The most convenient way to travel by air is via Chandigarh airport. It is at the distance of 214 Kms and takes around 6 hours to reach IIT campus. Chandigarh is well-connected with non-stop flights from Delhi, Mumbai, Hyderabad and Bangalore and direct flights from Kolkata and Chennai. Two other nearby airports are: Dharamshala airport, Gaggal which is around 150 Kms (3.5 hours) and Kullu airport, Bhuntar, at the distance of 50 Kms (1.5 hours).
+            </div>
+        </div>
+        <div class="map2"><iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d873150.9814821007!2d76.19899324920415!3d31.255453478986446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x390fed0be66ec96b%3A0xa5ff67f9527319fe!2sChandigarh!3m2!1d30.7333148!2d76.7794179!4m5!1s0x3904e36054b1fd81%3A0xc3174a90dec9f339!2sIndian%20Institute%20of%20Technology%2C%20Mandi%2C%20Parashar%20Road%2C%20Tehsil%20Sadar%2C%20Near%20Kataula%2C%20Kamand%2C%20Himachal%20Pradesh%20175005!3m2!1d31.7753998!2d76.9860747!5e0!3m2!1sen!2sin!4v1633957017568!5m2!1sen!2sin" style="border:0;" class="mapstyle" allowfullscreen="" loading="lazy"></iframe></div>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>

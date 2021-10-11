@@ -13,10 +13,12 @@ for (i = 0; i < coll.length; i++) {
     }
     else
     {
+      lastElement.style.fontSize = "0px";
       lastElement.classList.remove("visible");
       lastElement.classList.add("hidden");
       lastElement.style.fonSize = "100px";
       firstElement.style.transform = 'rotate(0deg)';
+      lastElement.style.fontSize = "20px";
     }
   });
 }
